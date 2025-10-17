@@ -11,7 +11,7 @@ RUN apt update && apt install -y --no-install-recommends \
     exiftool \
     jq
 
-ARG SPT_RELEASE_VERSION=4.0.0-40087-0582f8d
+ARG SPT_RELEASE_VERSION=4.0.1-40087-b6cf628
 
 WORKDIR /opt/build
 RUN curl -sL "https://spt-releases.modd.in/SPT-${SPT_RELEASE_VERSION}.7z" -o spt.7z
