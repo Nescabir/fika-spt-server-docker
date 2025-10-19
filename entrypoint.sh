@@ -10,7 +10,7 @@ backup_dir_name=${BACKUP_DIR:-backups}
 backup_dir=$mounted_dir/$backup_dir_name
 
 spt_current_major_version=4
-spt_version=${SPT_VERSION:-4.0.0-40087-0582f8d}
+spt_version=${SPT_VERSION:-4.0.1-40087-1eacf0f}
 spt_version=$(echo $spt_version | cut -d '-' -f 1)
 spt_backup_dir=$backup_dir/spt/$(date +%Y%m%dT%H%M)
 
@@ -20,7 +20,7 @@ spt_dir=$mounted_dir/SPT
 spt_data_dir=$spt_dir/SPT_Data
 enable_spt_listen_on_all_networks=${LISTEN_ALL_NETWORKS:-false}
 
-fika_version=${FIKA_VERSION:-1.0.1}
+fika_version=${FIKA_VERSION:-1.0.2}
 install_fika=${INSTALL_FIKA:-false}
 fika_backup_dir=$backup_dir/fika/$(date +%Y%m%dT%H%M)
 fika_config_path=assets/configs/fika.jsonc
